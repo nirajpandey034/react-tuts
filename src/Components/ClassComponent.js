@@ -8,7 +8,7 @@ export class ClassComponent extends Component {
   render() {
     return (
       <div>
-        <p>Hello World</p>
+        <p>Hello World 1</p>
       </div>
     );
   }
