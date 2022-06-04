@@ -5,13 +5,10 @@ export class ClassComponent extends Component {
     super();
   }
 
-  clickHandler (event){
-    console.log("Button Clicked from class component");
-}
   render() {
     return (
       <div>
-        <button type="button" onClick={()=>this.clickHandler()}>Class Submit</button>
+        <p>Hello World 1</p>
       </div>
     );
   }
