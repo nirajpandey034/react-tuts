@@ -4,24 +4,20 @@ export class ClassComponent extends Component {
   constructor(props) {
     super();
     this.state = {
-      name: "niraj",
+      name: []
     };
   }
-  changeName() {
-    if (this.state.name == "niraj") this.setState({ name: "manish" });
-    else this.setState({ name: "niraj" });
+
+  componentDidMount(){
+    this.setState(()=>{
+      
+    })
   }
+
   render() {
     return (
       <div>
-        <p>Hello {this.state.name}</p>
-        <button
-          onClick={() => {
-            this.changeName();
-          }}
-        >
-          Click me
-        </button>
+        
       </div>
     );
   }

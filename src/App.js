@@ -5,7 +5,7 @@ import FunctionalComponent from './Components/FunctionalComponent';
 function App() {
   return (
     <div className="App">
-        <ClassComponent />
+        <FunctionalComponent name="niraj"/>
     </div>
   );
 }

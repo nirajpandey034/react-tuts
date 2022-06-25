@@ -1,10 +1,22 @@
-import React from "react";
-import TextField from '@mui/material/TextField';
+import React, {useState, useEffect} from "react";
 
 function FunctionalComponent() {
-  return (
-    <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:'100vh'}}>
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+  const [name, setName] = useState('');
+  // const [dave, setDave] = useState('');
+
+  // useEffect(()=>{    //side-effect
+  //   setName('manish');
+  // },[]);
+
+  const handleNameChange= (e)=>{
+      setName(e.target.value);
+  }
+  return(
+    <div>
+      <input type="text" placeholder="enter name" onChange={(e)=>handleNameChange(e)}></input>
+      {
+        name !== '' && <button>Login</button>
+      }
     </div>
   );
 }
