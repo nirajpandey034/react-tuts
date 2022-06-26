@@ -4,20 +4,21 @@ export default class ClassComponent extends Component {
   constructor(props) {
     super();
     this.state = {
-      name: []
+      name: "niraja",
     };
-  }
-
-  componentDidMount(){
-    this.setState(()=>{
-      
-    })
   }
 
   render() {
     return (
       <div>
-        
+        {this.state.name}
+        <button
+          onClick={() => {
+            this.setState({ name: "manish" });
+          }}
+        >
+          Change
+        </button>
       </div>
     );
   }
