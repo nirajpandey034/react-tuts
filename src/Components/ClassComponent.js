@@ -5,16 +5,17 @@ export default class ClassComponent extends Component {
     super();
     this.state = {
       name: "niraj",
+      textColor: "blue",
     };
   }
 
   render() {
     return (
       <div>
-        {this.state.name} <br />
+        <p style={{color: this.state.textColor}}>{this.state.name}</p>
         <button
           onClick={() => {
-            this.setState({ name: "manish" });
+            this.setState({ name: "manish", textColor: 'red' });
           }}
         >
           Change
